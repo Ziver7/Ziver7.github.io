@@ -8,5 +8,11 @@ h3 {
 	text-align: center;	
 }
 p {
+	font-family: "Times New Roman", Georgia, Serif;
 	text-align: left;
+}
+
+.center {
+	margin: auto;
+	width: 60%;
 }
