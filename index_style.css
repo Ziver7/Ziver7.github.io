@@ -1,18 +1,45 @@
+body {
+	background-color: #FFCCB2;
+}
+
 h1 {
-	text-align: center;	
+	color: #000099;
+	font-family: "Georgia", serif;
+	font-size:275%;
+	text-align: center;
 }
 h2 {
+	border-style: dashed none none none;
+	border-width: 3px;
+	border-color: brown;
+	font-family: "Georgia", serif;
+	font-size:190%;
 	text-align: center;	
 }
 h3 {
+	font-family: "Georgia", serif;
 	text-align: center;	
 }
 p {
 	font-family: "Times New Roman", Georgia, Serif;
 	text-align: left;
+	margin: auto;
+	width: 95%;
 }
 
 .center {
 	margin: auto;
+	text-align: center;
 	width: 60%;
 }
+/*
+.center_links{
+	border-style: dashed none none none;
+	border-width: 3px;
+	border-color: brown;
+	font-family: 'Georgia', serif;
+	font-size:190%;
+	font-weight: bold;
+	text-align: center;
+}
+*/
