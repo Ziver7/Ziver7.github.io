@@ -31,14 +31,58 @@ p {
 	text-align: center;
 	width: 60%;
 }
-/*
-.center_links{
-	border-style: dashed none none none;
-	border-width: 3px;
-	border-color: brown;
-	font-family: 'Georgia', serif;
-	font-size:190%;
-	font-weight: bold;
-	text-align: center;
+
+.comments{
+	clear:both;
+	list-style:none;
+	width: 95%;
+	margin:auto;
 }
-*/
+
+.comment_area{
+	width: 95%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.count_char{
+	display: inline;
+}
+
+.menu {
+	background-color: white;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 24px;
+	height: 100%;
+	left: -200px;
+	position: fixed;
+	width: 200px;
+	height: 200px;
+}
+
+.menu_close{
+	color:blue;
+	cursor: pointer;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.menu_open {
+	color: blue;
+	cursor: pointer;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 24px;
+	margin: auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 95%;
+}
+
+.menu_selections{
+	list-style: none;
+	padding-left: 20px;
+}
