@@ -26,6 +26,13 @@ p {
 	width: 95%;
 }
 
+p.temp{
+	top: 0;
+	font-family: "Times New Roman", Georgia, Serif;
+	left: 60%;
+	position: absolute;
+	text-align: left;
+}
 .center {
 	margin: auto;
 	text-align: center;

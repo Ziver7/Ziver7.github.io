@@ -62,21 +62,21 @@ var main = function() {
 			$('.btn_post').removeClass('disabled');
 		}
 	});
-};
 
-var weather = function(){
 	$.ajax({
-		url : "http://api.wunderground.com/api/f4a19adf0055efa0/geolookup/conditions/q/CA/San_Jose.json",
+		url : "http://api.wunderground.com/api/f4a19adf0055efa0/conditions/q/CA/San_Jose.json",
 		dataType : "jsonp",
 		success : function(parsed_json) {
-		var location = parsed_json['location']['city'];
-		var temp_f = parsed_json['current_observation']['temp_f'];
-		//alert("Current temperature in " + location + " is: " + temp_f);
-		return temp_f;
+			var location = parsed_json['current_observation']['display_location'].city;
+			var temp_f = parsed_json['current_observation']['temp_f'];
+			//alert("Current temperature is: " + temp_f);
+			//$('identifier').html('value'); To change contents of html
+			$('#temp').html('The current temperature in ' + location +
+			 ' is ' + temp_f + ' degrees fahrenheit.');
 		},
-		error : function(msg) {
+		error : function(msg) {//In case of failure for request
+			$('#temp').html('Couldn\'t load the weather data. Sorry about that');
 		}
 	});
 };
-
 $(document).ready(main);
